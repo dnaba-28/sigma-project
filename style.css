@@ -1,0 +1,119 @@
+.main{
+    background-image:url(pookie.jpg) ;
+    height: 100vh;
+    background-size: cover;
+}
+.sidebarMENU{
+    position: fixed;
+    left: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color:rgba(128, 128, 128, 0.455);
+    box-shadow: 0px 0px 6px white;
+    transition: all 0.3s linear;
+    
+}
+.sidebarMENU .logo{
+    position: absolute;
+    width:300px;
+    line-height: 60px;
+    box-shadow: 0px 0px 6px white;
+
+
+
+}
+.sidebarMENU .logo a{
+    text-shadow:black;
+    font-size: 30px;
+    font-weight: bolder;
+    text-decoration: double;
+    position: absolute;
+    left: 50px;
+
+}
+
+.sidebarMENU .MENU{
+    position: absolute;
+    width: 300px;
+    top: 80px;
+    color: white;
+}
+
+.sidebarMENU .btn-one i{
+    position: absolute;
+    left: 280px;
+    top: 10px;
+    line-height: 40px;
+    font-size: 25px;
+    cursor: pointer;
+    
+
+}
+.sidebarMENU .MENU li{
+    margin-top: 6px;
+    padding: 15px 20px;
+}
+.sidebarMENU .MENU i,a{
+    color: white;
+    text-decoration: dotted;
+}
+.sidebarMENU .MENU i{
+    padding-right: 8px;
+}
+.sidebarMENU .socialmedia{
+    position: absolute;
+    left:80px;
+    top:550px;
+}
+.sidebarMENU .socialmedia i{
+    color: rgb(201, 212, 216);
+    opacity: 0.5;
+    padding: 0px 5px;
+    font-size: 20px;
+}
+.main h1{
+    position: fixed;
+    left:700px;
+    color: blue;
+    font-size: 50px;
+    text-shadow: 1px 1px 1px red,
+                   2px 2px 2px red;
+}
+#check{
+    display:none;
+}
+.main .btn-two i{
+    position: absolute;
+    
+    cursor:pointer;
+    top: 20px;
+    line-height: 40px;
+    font-size: 25px;
+}
+.sidebarMENU .MENU li:hover{
+    box-shadow: 0px 0px 6px white;
+}
+.sidebarMENU .socialmedia i:hover{
+    
+    font-size: 30px;
+    opacity:1;
+}
+#check:checked ~ .sidebarMENU {
+    left:0px;
+
+}
+#check:checked ~ .btn-two i{
+    opacity:0;
+    left:0;
+}
+#check:checked ~  .sidebarMENU .btn-one i{
+    opacity:1;
+}
+
+.btn-two i:hover{
+    font-size: 30px;
+}
+.btn-one i:hover{
+    font-size: 30px;
+}    
+
